@@ -5,3 +5,6 @@ imbalanced-learn
 joblib
 streamlit
 plotly
+xgboost
+catboost
+
