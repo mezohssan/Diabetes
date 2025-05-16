@@ -5,9 +5,6 @@ import plotly.express as px
 import joblib
 
 
-
-
-
 st.set_page_config(
     page_title="Diabetes prediction",
     page_icon="📊",
