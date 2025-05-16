@@ -11,6 +11,7 @@ from sklearn.compose import ColumnTransformer
 from imblearn.over_sampling import SMOTE
 from imblearn.under_sampling import RandomUnderSampler
 from imblearn.pipeline import Pipeline
+import streamlit as st 
 
 # 🧪 Data splitting and cross-validation
 from sklearn.model_selection import train_test_split, StratifiedKFold, cross_val_score, cross_val_predict
