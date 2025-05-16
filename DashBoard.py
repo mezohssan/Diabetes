@@ -1,8 +1,38 @@
-import streamlit as st 
-import pandas as pd      
+import pandas as pd
 import numpy as np
-import plotly.express as px 
+
+# 🧹 Data preprocessing and cleaning
+from datasist.structdata import detect_outliers
+from sklearn.impute import SimpleImputer, KNNImputer
+from sklearn.preprocessing import RobustScaler, OneHotEncoder
+from sklearn.compose import ColumnTransformer
+
+# ⚖️ Handling imbalanced data
+from imblearn.over_sampling import SMOTE
+from imblearn.under_sampling import RandomUnderSampler
+from imblearn.pipeline import Pipeline
+
+# 🧪 Data splitting and cross-validation
+from sklearn.model_selection import train_test_split, StratifiedKFold, cross_val_score, cross_val_predict
+
+# 🧮 Classification models
+from sklearn.linear_model import LogisticRegression
+from sklearn.svm import SVC
+from sklearn.neighbors import KNeighborsClassifier
+from sklearn.tree import DecisionTreeClassifier
+from sklearn.ensemble import RandomForestClassifier, GradientBoostingClassifier, HistGradientBoostingClassifier, StackingClassifier
+from xgboost import XGBClassifier
+from catboost import CatBoostClassifier
+
+# 🔍 Model evaluation and tuning
+from sklearn.model_selection import GridSearchCV
+from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
+
+# 💾 Saving and loading models
 import joblib
+
+# 👇 لو استخدمت كمان KMeans
+from sklearn.cluster import KMeans
 
 
 st.set_page_config(
