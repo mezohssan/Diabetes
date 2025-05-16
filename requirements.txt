@@ -2,8 +2,6 @@ pandas==1.5.3
 numpy==1.23.5
 scikit-learn==1.4.2
 imbalanced-learn==0.13.0
-catboost==1.2.8
-xgboost==2.0.3
 joblib==1.4.2
 streamlit==1.26.0
 plotly==5.14.1
