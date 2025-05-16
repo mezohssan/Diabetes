@@ -1,11 +1,10 @@
-pandas
-numpy
-scikit-learn
-imbalanced-learn
-joblib
-streamlit
-plotly
-xgboost
-catboost
-datasist
+pandas==1.5.3
+numpy==1.23.5
+sklearn==1.5.2
+imblearn==0.13.0
+joblib==1.4.2
+streamlit==1.26.0
+plotly==5.14.1
+xgboost==3.0.0
+catboost==1.2.8
 
